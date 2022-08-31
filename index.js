@@ -4,6 +4,7 @@ var cors = require("cors");
 var app = express();
 var port = process.env.PORT || 3000;
 
+app.use(cors());
 app.get("/pokemon", (req, res) => {
     res.send(pokeDex);
 });
