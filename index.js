@@ -10,6 +10,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.use(morgan("dev"));
+app.use(cors());
 
 app.get("/pokemon", (req, res) => {
     console.log("here are all pokemon:");
